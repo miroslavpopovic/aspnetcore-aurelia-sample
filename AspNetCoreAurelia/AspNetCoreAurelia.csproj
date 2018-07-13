@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-AspNetCoreAurelia-088B0816-5B1E-4423-9BF9-AB752FA65F2F</UserSecretsId>
+    <TypeScriptToolsVersion>2.9</TypeScriptToolsVersion>
   </PropertyGroup>
 
   <ItemGroup>
