@@ -18,6 +18,7 @@ export function configure(aurelia) {
     if (environment.testing) {
         aurelia.use.plugin(PLATFORM.moduleName('aurelia-testing'));
     }
+    aurelia.container.registerInstance('serverConfig', Object.assign({}, aurelia.host.dataset));
     aurelia.start().then(function () { return aurelia.setRoot(PLATFORM.moduleName('app')); });
 }
 //# sourceMappingURL=main.js.map

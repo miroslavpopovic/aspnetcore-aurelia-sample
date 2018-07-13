@@ -1,8 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@model ConfigViewModel
 @{
     Layout = null;
     ViewData["Title"] = "Home page";
 }
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
 </head>
 <body>
-    <div aurelia-app="main">Loading...</div>
+    <div aurelia-app="main" data-username="@Model.UserName" data-token="@Model.Token">Loading...</div>
 
     <environment names="Development">
         <script type="text/javascript" src="~/dist/vendor.bundle.js" asp-append-version="true"></script>

@@ -1,3 +1,11 @@
 <template>
-  <h1>${message}</h1>
+    <h1>${message}</h1>
+    <h2>Welcome ${serverConfig.username}</h2>
+    <p>Your JWT token for API calls is: ${serverConfig.token}</p>
+
+    <button class="btn btn-default" click.trigger="loadData()">Load Data</button>
+
+    <div if.bind="data">
+        Random data from server is: ${data}
+    </div>
 </template>
